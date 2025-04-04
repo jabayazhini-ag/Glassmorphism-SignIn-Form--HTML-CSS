@@ -117,9 +117,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.721);
     border-left: 1px solid rgba(255, 255, 255, 0.721);
     z-index: 10;
-    backdrop-filter: blur(2px);
-    text-align: center;
-    justify-content: center;
+    backdrop-filter: blur(2px); 
 }
 
 h1 {
@@ -131,6 +129,7 @@ h1 {
     letter-spacing: 1px;
     opacity: 0.9;
     cursor: default;
+    text-align: center;
 }
 
 .input-box {
@@ -171,7 +170,7 @@ h1 {
 
 .remember-forgot {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     margin: 30px 25px 30px 25px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -233,7 +232,10 @@ button:hover {
     opacity: 0.9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 0.95px;
-    cursor: default;
+    cursor: default;    
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
 }
 
 .register-link a {
@@ -250,4 +252,11 @@ button:hover {
     text-decoration: underline;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
     font-weight: bold;
+}
+
+@media (max-width: 1000px) {   
+    .container form {
+        margin: 10px;
+        font-size: 14px;                
+    }
 }
