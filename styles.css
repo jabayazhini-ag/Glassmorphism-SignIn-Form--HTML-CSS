@@ -259,4 +259,8 @@ button:hover {
         margin: 10px;
         font-size: 14px;                
     }
+
+    .container {
+        overflow: hidden;
+    }
 }
