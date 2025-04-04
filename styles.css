@@ -252,166 +252,124 @@ button:hover {
     font-weight: bold;
 }
 
-/* Media Queries for All Screen Sizes */
+/* Media Queries  */
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
     .container form {
-        width: 370px;
-        height: 470px;
-    }
-    
-    /* Adjust ball positions for large screens */
-    .container .ball-1 { transform: translate(-500px, 180px); }
-    .container .ball-2 { transform: translate(230px, -220px); }
-    .container .ball-3 { transform: translate(-240px, 220px); }
-    .container .ball-4 { transform: translate(150px, 190px); }
-    .container .ball-5 { transform: translate(-150px, -190px); }
-    .container .ball-6 { transform: translate(520px, -200px); }
-}
-
-@media (max-width: 992px) {
-    .container form {
-        width: 350px;
-        height: 450px;
-    }
-    
-    h1 {
-        font-size: 30px;
-        margin-top: 20px;
-    }
-    
-    .input-box input {
-        font-size: 15px;
-        margin: 20px;
-    }
-    
-    .remember-forgot {
-        margin: 25px 20px;
-        font-size: 15px;
-    }
-    
-    /* Adjust ball positions for medium screens */
-    .container .ball-1 { transform: translate(-400px, 150px); }
-    .container .ball-2 { transform: translate(190px, -180px); }
-    .container .ball-3 { transform: translate(-200px, 180px); }
-    .container .ball-4 { transform: translate(120px, 150px); }
-    .container .ball-5 { transform: translate(-120px, -150px); }
-    .container .ball-6 { transform: translate(400px, -160px); }
-    
-    .container::before { transform: translate(-430px, -150px); }
-    .container::after { transform: translate(430px, 150px); }
-}
-
-@media (max-width: 768px) {
-    .container form {
-        width: 330px;
-        height: 430px;
+        width: 90%;
+        max-width: 320px;
+        height: auto;
+        min-height: 450px;
+        padding: 20px 15px;
         border-radius: 15px 40px;
     }
     
     h1 {
         font-size: 28px;
-        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     
     .input-box input {
+        width: 85%;
+        margin: 15px;
         font-size: 14px;
-        margin: 18px;
     }
     
     .input-box i {
         right: 30px;
         font-size: 16px;
-        transform: translateY(25px);
+        transform: translateY(20px);
     }
     
     .remember-forgot {
-        margin: 20px 18px;
+        margin: 15px;
         font-size: 14px;
     }
     
     button {
-        width: 130px;
+        width: 120px;
         font-size: 15px;
-        margin: 20px auto;
+        margin: 15px auto;
     }
     
     .register-link p {
-        margin: 0 18px 20px;
+        margin: 15px;
         font-size: 14px;
     }
     
-    /* Scale down and adjust ball positions for tablets */
-    .container .ball-1 { height: 90px; width: 90px; transform: translate(-300px, 120px); }
-    .container .ball-2 { height: 120px; width: 120px; transform: translate(150px, -140px); }
-    .container .ball-3 { height: 120px; width: 120px; transform: translate(-150px, 140px); }
-    .container .ball-4 { height: 100px; width: 100px; transform: translate(100px, 120px); }
-    .container .ball-5 { height: 100px; width: 100px; transform: translate(-100px, -120px); }
-    .container .ball-6 { height: 80px; width: 80px; transform: translate(320px, -130px); }
+    /* Adjust decorative elements for mobile */
+    .container .ball-1 { transform: scale(0.6) translate(-200px, 90px); }
+    .container .ball-2 { transform: scale(0.6) translate(120px, -100px); }
+    .container .ball-3 { transform: scale(0.6) translate(-120px, 100px); }
+    .container .ball-4 { transform: scale(0.6) translate(80px, 90px); }
+    .container .ball-5 { transform: scale(0.6) translate(-80px, -90px); }
+    .container .ball-6 { transform: scale(0.6) translate(200px, -100px); }
     
-    .container::before { height: 250px; width: 250px; transform: translate(-350px, -120px); }
-    .container::after { height: 250px; width: 250px; transform: translate(350px, 120px); }
+    .container::before { transform: scale(0.7) translate(-200px, -100px); }
+    .container::after { transform: scale(0.7) translate(200px, 100px); }
 }
 
-@media (max-width: 576px) {
+/* Small mobile phones (iPhone SE, etc.) */
+@media (max-width: 375px) {
     .container form {
-        width: 300px;
-        height: 420px;
+        width: 85%;
+        max-width: 280px;
+        min-height: 420px;
         border-radius: 12px 35px;
     }
     
     h1 {
-        font-size: 25px;
-        margin-top: 15px;
-        margin-bottom: 10px;
+        font-size: 24px;
+        margin-top: 10px;
     }
     
     .input-box input {
         width: 80%;
+        margin: 12px;
         font-size: 13px;
-        margin: 16px;
     }
     
     .input-box i {
         right: 35px;
         font-size: 15px;
-        transform: translateY(22px);
+        transform: translateY(16px);
     }
     
     .remember-forgot {
-        margin: 18px 16px;
-        font-size: 13px;
+        margin: 12px;
+        font-size: 12px;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
     }
     
     button {
-        width: 120px;
+        width: 100px;
         font-size: 14px;
-        margin: 15px auto;
+        margin: 12px auto;
     }
     
     .register-link p {
-        margin: 0 16px 15px;
-        font-size: 13px;
+        margin: 12px;
+        font-size: 12px;
     }
     
-    /* Further adjust ball positions and sizes for mobile */
-    .container .ball-1 { height: 70px; width: 70px; transform: translate(-200px, 90px); }
-    .container .ball-2 { height: 90px; width: 90px; transform: translate(120px, -100px); }
-    .container .ball-3 { height: 90px; width: 90px; transform: translate(-120px, 100px); }
-    .container .ball-4 { height: 80px; width: 80px; transform: translate(80px, 90px); }
-    .container .ball-5 { height: 80px; width: 80px; transform: translate(-80px, -90px); }
-    .container .ball-6 { height: 60px; width: 60px; transform: translate(220px, -100px); }
-    
-    .container::before { height: 200px; width: 200px; transform: translate(-250px, -100px); }
-    .container::after { height: 200px; width: 200px; transform: translate(250px, 100px); }
+    /* Hide some decorative elements on very small screens */
+    .container .ball-1,
+    .container .ball-6 {
+        display: none;
+    }
 }
 
-/* Add for very small screens like iPhone SE */
-@media (max-width: 375px) {
+/* Very small mobile phones */
+@media (max-width: 320px) {
     .container form {
-        width: 280px;
-        height: 400px;
+        width: 90%;
+        max-width: 260px;
+        min-height: 400px;
         border-radius: 10px 30px;
+        padding: 15px 10px;
     }
     
     h1 {
@@ -419,37 +377,18 @@ button:hover {
     }
     
     .input-box input {
-        width: 80%;
+        margin: 10px;
         font-size: 12px;
-        margin: 14px;
     }
     
     .input-box i {
-        right: 32px;
-        transform: translateY(19px);
+        right: 25px;
+        transform: translateY(14px);
     }
     
-    .remember-forgot {
-        margin: 15px 14px;
-        font-size: 12px;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-    
-    button {
-        width: 110px;
-        font-size: 13px;
-    }
-    
-    .register-link p {
-        margin: 0 14px 12px;
-        font-size: 12px;
-    }
-    
-    /* Adjust ball visibility for very small screens */
-    .container .ball-6,
-    .container .ball-1 {
-        display: none; /* Hide some balls on very small screens to reduce clutter */
+    /* Hide more decorative elements */
+    .container .ball-2,
+    .container .ball-3 {
+        display: none;
     }
 }
