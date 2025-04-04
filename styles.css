@@ -129,7 +129,7 @@ h1 {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: default;
 }
 
@@ -147,13 +147,13 @@ h1 {
     font-size: 16px;
     letter-spacing: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    opacity: 0.8;
+    opacity: 0.9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .input-box input::placeholder {
     color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
 }
@@ -166,6 +166,7 @@ h1 {
     font-size: 18px;
     transform: translateY(28px);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
 }
 
 .remember-forgot {
@@ -176,7 +177,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 16px;
     letter-spacing: 1px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .remember-forgot input[type="checkbox"] {
@@ -186,7 +187,7 @@ h1 {
 .remember-forgot a {
     text-align: center;
     color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     font-size: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -208,7 +209,7 @@ button {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
     background: rgba(255, 255, 255, 0.06);
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 4px 6px;
     border: none;
     outline: none;
@@ -229,7 +230,7 @@ button:hover {
     margin-bottom: 25px;
     color: white;
     font-size: 16px;
-    opacity: 0.8;
+    opacity: 0.9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 0.95px;
     cursor: default;
@@ -239,7 +240,7 @@ button:hover {
     text-decoration: none;
     color: white;
     font-size: 16px;
-    opacity: 0.8;
+    opacity: 0.9;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-weight: 550;
 }
