@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-.container{
+.container {
     height: 100vh;
     width: 100%;
     position: relative;
@@ -16,18 +16,18 @@
     align-items: center;
 }
 
-.container::before{
+.container::before {
     content: '';
     position: absolute;
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    background: linear-gradient( rgba(255, 0, 0, 0.721),rgba(0, 0, 255, 0.833));
+    background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
     transform: translate(-580px, -170px);
     /* opacity: 0.8; */
 }
 
-.container::after{
+.container::after {
     content: '';
     position: absolute;
     height: 300px;
@@ -38,49 +38,49 @@
     opacity: 0.8;
 }
 
-.container .ball-1{
+.container .ball-1 {
     height: 115px;
     width: 115px;
     border-radius: 50%;
-    background: linear-gradient( rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
+    background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
     transform: translate(-650px, 220px);
     position: absolute;
     /* opacity: 0.8; */
 }
 
-.container .ball-2{
+.container .ball-2 {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: linear-gradient( rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
+    background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
     transform: translate(290px, -270px);
     position: absolute;
     /* opacity: 0.8; */
 }
 
-.container .ball-3{
+.container .ball-3 {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    background: linear-gradient( rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
+    background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
     transform: translate(-300px, 270px);
     position: absolute;
     /* opacity: 0.8; */
 }
 
-.container .ball-4{
+.container .ball-4 {
     content: '';
-    position: absolute;   
+    position: absolute;
     width: 130px;
     height: 130px;
-    background: linear-gradient( rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
+    background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
     border-radius: 50%;
     transform: translate(185px, 230px);
     z-index: -1;
     /* opacity: 0.8; */
 }
 
-.container .ball-5{
+.container .ball-5 {
     content: '';
     position: absolute;
     /* top: 10%;
@@ -88,13 +88,13 @@
     transform: translate(-180px, -230px);
     width: 130px;
     height: 130px;
-    background: linear-gradient( rgba(255, 0, 0, 0.934),rgba(0, 0, 255, 0.901));
+    background: linear-gradient(rgba(255, 0, 0, 0.934), rgba(0, 0, 255, 0.901));
     border-radius: 50%;
     z-index: -1;
     /* opacity: 0.8; */
 }
 
-.container .ball-6{
+.container .ball-6 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -104,11 +104,11 @@
     /* opacity: 0.8; */
 }
 
-.container form{
-    width: 380px;
-    height: 480px;
+.container form {
+    width: 390px;
+    height: 490px;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     position: relative;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.67);
@@ -117,28 +117,29 @@
     border-top: 1px solid rgba(255, 255, 255, 0.721);
     border-left: 1px solid rgba(255, 255, 255, 0.721);
     z-index: 10;
-    backdrop-filter: blur(2px);  
+    backdrop-filter: blur(2px);
+    text-align: center;
+    justify-content: center;
 }
 
 h1 {
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 35px;
-    text-align: center;
-    color: white; 
-    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
     opacity: 0.8;
+    cursor: default;
 }
 
-.input-box{
-    position: relative;    
+.input-box {
+    position: relative;
 }
 
 .input-box input {
-    width: 80%;
-    margin: 30px ;   
-    margin-bottom: 5% ;
+    width: 85%;
+    margin: 25px;
     border: none;
     outline: none;
     background: transparent;
@@ -146,51 +147,66 @@ h1 {
     font-size: 16px;
     letter-spacing: 1px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    opacity: 0.8;    
-    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.input-box input::placeholder{
+.input-box input::placeholder {
     color: white;
-    opacity: 0.8; 
-    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5);  
+    opacity: 0.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     letter-spacing: 1px;
 }
 
-.input-box i{
+.input-box i {
     position: absolute;
-    right: 50px;
+    right: 33px;
     font-size: 20px;
     color: white;
     font-size: 18px;
-    transform: translateY(33px);
-    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5); 
+    transform: translateY(28px);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.remember-forgot{    
+.remember-forgot {
     display: flex;
     justify-content: space-between;
-    margin: 8% 6% 4% 5%;
+    margin: 30px 25px 30px 25px;
     color: white;
-    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 16px;
     letter-spacing: 1px;
-    opacity: 0.8;  
+    opacity: 0.8;
 }
 
-label {  
+.remember-forgot input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.remember-forgot a {
+    text-align: center;
     color: white;
-    text-shadow: 2px 2px 4px  rgba(0, 0, 0, 0.5); 
+    opacity: 0.8;
     font-size: 16px;
-    opacity: 0.8;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    font-weight: 550; 
+}
+
+.remember-forgot a:hover {
+    color: rgba(0, 0, 255, 0.927);
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    font-weight: bold;
 }
 
 button {
     width: 140px;
-    margin: 25px auto;
+    margin: 30px auto 25px auto;
     color: white;
     font-size: 16px;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
     background: rgba(255, 255, 255, 0.06);
     opacity: 0.8;
     padding: 4px 6px;
@@ -198,57 +214,39 @@ button {
     outline: none;
     border-radius: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);  
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     box-shadow: 3px 3px 5px rgba(31, 38, 135, .7);
 }
 
 button:hover {
-    background-color: rgba(243, 5, 9, 0.632);   
-}
-
-.remember-forgot a {
-    text-align: center;    
-    color: white;
-    opacity: 0.8;
-    font-size: 16px;
+    background-color: rgba(243, 5, 9, 0.632);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-    text-decoration: none;
-}
-
-.remember-forgot a:hover {
-    color:rgba(0, 0, 255, 0.927);
-    text-decoration: underline;
 }
 
 .register-link p {
-    margin-left: 10%;
-    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
     color: white;
     font-size: 16px;
     opacity: 0.8;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.95px;
+    cursor: default;
 }
 
-.register-link a{
+.register-link a {
     text-decoration: none;
     color: white;
     font-size: 16px;
     opacity: 0.8;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
-    letter-spacing: 1px;
-    font-weight: 500;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 550;
 }
 
-.register-link a:hover{
-    color:rgba(0, 0, 255, 0.927);
+.register-link a:hover {
+    color: rgba(0, 0, 255, 0.927);
     text-decoration: underline;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+    font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
