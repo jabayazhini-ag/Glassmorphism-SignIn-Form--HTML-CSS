@@ -257,8 +257,6 @@ button:hover {
 
 @media (max-width: 1000px) {
     .container form {
-        margin: 10px;
-        width: 90%;
-        height: 450px;
+        margin: 10px;       
     }
 }
