@@ -6,65 +6,71 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0, 0, 255, 0.616), rgba(255, 0, 0, 0.629));
+}
+
 .container {
     height: 100vh;
     width: 100%;
     position: relative;
-    background: linear-gradient(180deg, rgba(0, 0, 255, 0.616), rgba(255, 0, 0, 0.629));
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    padding: 20px;
 }
 
 .container::before {
     content: '';
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 19vw;
+    width: 19vw;
     border-radius: 50%;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
-    transform: translate(-580px, -170px);
+    transform: translate(-38vw, -25vh);
     /* opacity: 0.8; */
 }
 
 .container::after {
     content: '';
     position: absolute;
-    height: 300px;
-    width: 300px;
+    height: 19vw;
+    width: 19vw;
     border-radius: 50%;
     background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
-    transform: translate(580px, 180px);
-    opacity: 0.8;
+    transform: translate(38vw, 25vh);
+    /* opacity: 0.8; */
 }
 
 .container .ball-1 {
-    height: 115px;
-    width: 115px;
+    height: 7.5vw;
+    width: 7.5vw;
     border-radius: 50%;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
-    transform: translate(-650px, 220px);
+    transform: translate(-42vw, 33vh);
     position: absolute;
     /* opacity: 0.8; */
 }
 
 .container .ball-2 {
-    height: 150px;
-    width: 150px;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
-    transform: translate(290px, -260px);
+    transform: translate(20vw, -37vh);
     position: absolute;
     /* opacity: 0.8; */
 }
 
 .container .ball-3 {
-    height: 150px;
-    width: 150px;
+    height: 10vw;
+    width: 10vw;
     border-radius: 50%;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
-    transform: translate(-300px, 260px);
+    transform: translate(-20vw, 37vh);
     position: absolute;
     /* opacity: 0.8; */
 }
@@ -72,11 +78,11 @@
 .container .ball-4 {
     content: '';
     position: absolute;
-    width: 130px;
-    height: 130px;
+    width: 8.5vw;
+    height: 8.5vw;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
     border-radius: 50%;
-    transform: translate(185px, 230px);
+    transform: translate(12vw, 33.5vh);
     z-index: -1;
     /* opacity: 0.8; */
 }
@@ -86,9 +92,9 @@
     position: absolute;
     /* top: 10%;
     left: 34%; */
-    transform: translate(-180px, -230px);
-    width: 130px;
-    height: 130px;
+    transform: translate(-12vw, -33.5vh);
+    width: 8.5vw;
+    height: 8.5vw;
     background: linear-gradient(rgba(255, 0, 0, 0.934), rgba(0, 0, 255, 0.901));
     border-radius: 50%;
     z-index: -1;
@@ -96,18 +102,18 @@
 }
 
 .container .ball-6 {
-    height: 100px;
-    width: 100px;
+    height: 6.5vw;
+    width: 6.5vw;
     border-radius: 50%;
     background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
-    transform: translate(660px, -240px);
+    transform: translate(43vw, -35vh);
     position: absolute;
     /* opacity: 0.8; */
 }
 
 .container form {
-    width: 390px;
-    height: 490px;
+    width: 25.5vw;
+    height: 70.5vh;
     display: flex;
     flex-direction: column;
     position: relative;
