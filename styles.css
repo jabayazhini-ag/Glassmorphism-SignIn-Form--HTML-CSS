@@ -112,8 +112,8 @@ body {
 }
 
 .container form {
-    width: 25.5vw;
-    height: 70.5vh;
+    width: 390px;
+    height: 490px;   
     display: flex;
     flex-direction: column;
     position: relative;
