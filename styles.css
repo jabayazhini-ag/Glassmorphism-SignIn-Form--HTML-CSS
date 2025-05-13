@@ -6,71 +6,64 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-    background: linear-gradient(180deg, rgba(0, 0, 255, 0.616), rgba(255, 0, 0, 0.629));
-}
-
-.container {
+.container{
     height: 100vh;
     width: 100%;
     position: relative;
+    background: linear-gradient(180deg, rgba(0, 0, 255, 0.616), rgba(255, 0, 0, 0.629));
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
 .container::before {
     content: '';
     position: absolute;
-    height: 19vw;
-    width: 19vw;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
-    transform: translate(-38vw, -25vh);
+    transform: translate(-580px, -180px);
     /* opacity: 0.8; */
 }
 
 .container::after {
     content: '';
     position: absolute;
-    height: 19vw;
-    width: 19vw;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
-    transform: translate(38vw, 25vh);
+    transform: translate(580px, 190px);
     /* opacity: 0.8; */
 }
 
 .container .ball-1 {
-    height: 7.5vw;
-    width: 7.5vw;
+    height: 115px;
+    width: 115px;
     border-radius: 50%;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
-    transform: translate(-42vw, 33vh);
+    transform: translate(-650px, 220px);
     position: absolute;
     /* opacity: 0.8; */
 }
 
 .container .ball-2 {
-    height: 10vw;
-    width: 10vw;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
-    transform: translate(20vw, -37vh);
+    transform: translate(295px, -260px);
     position: absolute;
     /* opacity: 0.8; */
 }
 
 .container .ball-3 {
-    height: 10vw;
-    width: 10vw;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
-    transform: translate(-20vw, 37vh);
+    transform: translate(-305px, 260px);
     position: absolute;
     /* opacity: 0.8; */
 }
@@ -78,11 +71,11 @@ body {
 .container .ball-4 {
     content: '';
     position: absolute;
-    width: 8.5vw;
-    height: 8.5vw;
+    width: 130px;
+    height: 130px;
     background: linear-gradient(rgba(255, 0, 0, 0.721), rgba(0, 0, 255, 0.833));
     border-radius: 50%;
-    transform: translate(12vw, 33.5vh);
+    transform: translate(185px, 230px);
     z-index: -1;
     /* opacity: 0.8; */
 }
@@ -92,9 +85,9 @@ body {
     position: absolute;
     /* top: 10%;
     left: 34%; */
-    transform: translate(-12vw, -33.5vh);
-    width: 8.5vw;
-    height: 8.5vw;
+    transform: translate(-180px, -230px);
+    width: 130px;
+    height: 130px;
     background: linear-gradient(rgba(255, 0, 0, 0.934), rgba(0, 0, 255, 0.901));
     border-radius: 50%;
     z-index: -1;
@@ -102,11 +95,11 @@ body {
 }
 
 .container .ball-6 {
-    height: 6.5vw;
-    width: 6.5vw;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background: linear-gradient(rgba(0, 0, 255, 0.833), rgba(255, 0, 0, 0.721));
-    transform: translate(43vw, -35vh);
+    transform: translate(660px, -240px);
     position: absolute;
     /* opacity: 0.8; */
 }
@@ -261,48 +254,274 @@ button:hover {
     font-weight: bold;
 }
 
-/* Mobile responsiveness for screens below 768px */
-@media (max-width: 768px) {
-    .logo img {
-      width: 60px;
-      height: 60px;
+/* Media Queries for Responsiveness */
+
+/* Large screens (standard desktop view - your current styling works well here) */
+/* No changes needed for screens above 1024px */
+
+/* Medium-sized screens (small desktops, laptops) */
+@media screen and (max-width: 1024px) {
+    .container::before {
+        transform: translate(-380px, -120px);
+        height: 250px;
+        width: 250px;
     }
-  
-    .title h1 {
-      font-size: 1.5em;
-      text-align: center;
-    }
-  
-    .composer-box {
-      width: 90%;
-      margin: 10px auto;
-      display: block;
-    }
-  
-    .composer-box img {
-      width: 100%;
-      height: auto;
-    }
-  
-    .footer {
-      font-size: 0.9em;
-      text-align: center;
-      padding: 10px;
-    }
-  
-    .main-section {
-      padding: 10px;
-    }
-  }
-  
-  /* Extra-small devices (max-width: 480px) */
-  @media (max-width: 480px) {
-    .title h1 {
-      font-size: 1.2em;
-    }
-  
-    .footer {
-      font-size: 0.8em;
-    }
-  }
     
+    .container::after {
+        transform: translate(380px, 140px);
+        height: 250px;
+        width: 250px;
+    }
+    
+    .container .ball-1 {
+        transform: translate(-450px, 180px);
+        height: 100px;
+        width: 100px;
+    }
+    
+    .container .ball-6 {
+        transform: translate(450px, -180px);
+        height: 80px;
+        width: 80px;
+    }
+}
+
+/* Tablets and small laptops */
+@media screen and (max-width: 768px) {
+    .container form {
+        width: 350px;
+        height: 460px;
+    }
+    
+    .container::before {
+        transform: translate(-300px, -100px);
+        height: 200px;
+        width: 200px;
+    }
+    
+    .container::after {
+        transform: translate(300px, 120px);
+        height: 200px;
+        width: 200px;
+    }
+    
+    .container .ball-1 {
+        transform: translate(-320px, 150px);
+        height: 90px;
+        width: 90px;
+    }
+    
+    .container .ball-2 {
+        transform: translate(220px, -200px);
+        height: 120px;
+        width: 120px;
+    }
+    
+    .container .ball-3 {
+        transform: translate(-220px, 200px);
+        height: 120px;
+        width: 120px;
+    }
+    
+    .container .ball-4 {
+        transform: translate(140px, 180px);
+        height: 100px;
+        width: 100px;
+    }
+    
+    .container .ball-5 {
+        transform: translate(-140px, -180px);
+        height: 100px;
+        width: 100px;
+    }
+    
+    .container .ball-6 {
+        transform: translate(320px, -150px);
+        height: 70px;
+        width: 70px;
+    }
+}
+
+/* Mobile phones (landscape) */
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    .container form {
+        width: 320px;
+        height: 450px;
+        border-radius: 12px 40px;
+    }
+    
+    .input-box input {
+        width: 80%;
+        margin: 20px;
+        font-size: 15px;
+    }
+    
+    .input-box i {
+        right: 30px;
+        transform: translateY(23px);
+    }
+    
+    .remember-forgot {
+        margin: 20px 20px 20px 20px;
+        font-size: 14px;
+    }
+    
+    .register-link p {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    /* Adjust decorative elements */
+    .container::before,
+    .container::after {
+        height: 150px;
+        width: 150px; 
+    }
+    
+    .container::before {
+        transform: translate(-200px, -80px);
+    }
+    
+    .container::after {
+        transform: translate(200px, 100px);
+    }
+    
+    /* Adjust or hide some balls for cleaner mobile view */
+    .container .ball-1 {
+        transform: translate(-220px, 130px);
+        height: 70px;
+        width: 70px;
+    }
+    
+    .container .ball-6 {
+        transform: translate(220px, -130px);
+        height: 60px;
+        width: 60px;
+    }
+}
+
+/* Mobile phones (portrait) */
+@media screen and (max-width: 400px) {
+    .container form {
+        width: 92%;
+        max-width: 300px;
+        height: 420px;
+        border-radius: 10px 35px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .input-box input {
+        font-size: 14px;
+        margin: 18px;
+    }
+    
+    .input-box i {
+        right: 25px;
+        font-size: 16px;
+        transform: translateY(20px);
+    }
+    
+    .remember-forgot {
+        margin: 15px 18px 15px 18px;
+        font-size: 13px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    button {
+        width: 120px;
+        margin: 15px auto 15px auto;
+        font-size: 15px;
+    }
+    
+    .register-link p {
+        font-size: 13px;
+        margin-left: 18px;
+        margin-right: 18px;
+        margin-bottom: 18px;
+    }
+    
+    /* Further adjust decorative elements */
+    .container::before,
+    .container::after {
+        height: 120px;
+        width: 120px;
+    }
+    
+    .container::before {
+        transform: translate(-150px, -70px);
+    }
+    
+    .container::after {
+        transform: translate(150px, 80px);
+    }
+    
+    /* Simplify background by hiding some decorative elements */
+    .container .ball-2,
+    .container .ball-3,
+    .container .ball-4,
+    .container .ball-5 {
+        display: none;
+    }
+    
+    .container .ball-1 {
+        transform: translate(-160px, 100px);
+        height: 60px;
+        width: 60px;
+    }
+    
+    .container .ball-6 {
+        transform: translate(160px, -100px);
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+    .container form {
+        width: 90%;
+        height: 400px;
+        border-radius: 8px 30px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    
+    .input-box input {
+        width: 78%;
+        margin: 15px;
+    }
+    
+    .input-box i {
+        right: 22px;
+        transform: translateY(17px);
+    }
+    
+    /* Further simplify background by reducing size of remaining elements */
+    .container::before,
+    .container::after {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .container::before {
+        transform: translate(-120px, -60px);
+    }
+    
+    .container::after {
+        transform: translate(120px, 70px);
+    }
+}
