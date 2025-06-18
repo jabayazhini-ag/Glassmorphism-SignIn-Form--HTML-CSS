@@ -14,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container::before {
@@ -256,9 +257,6 @@ button:hover {
 
 /* Media Queries for Responsiveness */
 
-/* Large screens (standard desktop view - your current styling works well here) */
-/* No changes needed for screens above 1024px */
-
 /* Medium-sized screens (small desktops, laptops) */
 @media screen and (max-width: 1024px) {
     .container::before {
@@ -279,10 +277,43 @@ button:hover {
         width: 100px;
     }
     
+    .container .ball-2 {
+        transform: translate(250px, -230px);
+        height: 130px;
+        width: 130px;
+    }
+
+    .container .ball-3 {
+        transform: translate(-250px, 230px);
+        height: 130px;
+        width: 130px;
+    }
+
+    .container .ball-4 {
+        transform: translate(160px, 200px);
+        height: 110px;
+        width: 110px;
+    }
+    
+    .container .ball-5 {
+        transform: translate(-160px, -200px);
+        height: 110px;
+        width: 110px;
+    }
+
     .container .ball-6 {
         transform: translate(450px, -180px);
         height: 80px;
         width: 80px;
+    }
+
+    .container form {
+        width: 370px;
+        height: 480px;
+    }
+    
+    h1 {
+        font-size: 32px;
     }
 }
 
@@ -340,188 +371,215 @@ button:hover {
         height: 70px;
         width: 70px;
     }
+
+    h1 {
+        font-size: 30px; /* Further reduced */
+    }
+
+    .input-box input {
+        font-size: 14px; /* Further reduced */
+        margin: 22px; /* Adjusted margin */
+    }
+
+    .input-box i {
+        font-size: 16px; /* Further reduced */
+        transform: translateY(25px); /* Adjusted alignment */
+        right: 30px; /* Adjusted position */
+    }
+
+    .remember-forgot {
+        margin: 25px 22px; /* Adjusted margin */
+        font-size: 14px; /* Consistent font size */
+    }
+    
+    .remember-forgot a {
+        font-size: 14px; /* Consistent font size */
+    }
+
+    button {
+        width: 130px; /* Slightly smaller button */
+        font-size: 15px; /* Slightly smaller text */
+        margin: 25px auto; /* Adjusted margin */
+    }
+
+    .register-link p {
+        font-size: 14px; /* Consistent font size */
+        margin: 22px; /* Adjusted margin */
+    }
+
+    .register-link a {
+        font-size: 14px; /* Consistent font size */
+    }
 }
 
-/* Mobile phones (landscape) */
+/* Mobile phones (landscape) and smaller tablets */
 @media screen and (max-width: 576px) {
     h1 {
-        font-size: 30px;
+        font-size: 28px; /* Reduced for smaller screens */
+        margin-top: 20px; /* Adjusted margin */
+        margin-bottom: 10px; /* Adjusted margin */
     }
     
     .container form {
-        width: 320px;
-        height: 450px;
-        border-radius: 12px 40px;
+        width: 90%; /* Use percentage for better flexibility */
+        max-width: 320px; /* Set a max-width to prevent it from getting too wide on slightly larger small screens */
+        height: 420px; /* Reduced height */
+        border-radius: 10px 35px; /* Slightly smaller border radius */
     }
     
     .input-box input {
-        width: 80%;
-        margin: 20px;
-        font-size: 15px;
+        width: calc(100% - 40px); /* Calculate width dynamically, accounting for margins */
+        margin: 18px 20px; /* Adjusted margins for smaller screens */
+        font-size: 13px; /* Smaller font size */
     }
     
     .input-box i {
-        right: 30px;
-        transform: translateY(23px);
+        right: 25px; /* Adjusted position */
+        transform: translateY(20px); /* Adjusted alignment */
+        font-size: 15px; /* Smaller icon size */
     }
     
     .remember-forgot {
-        margin: 20px 20px 20px 20px;
-        font-size: 14px;
+        margin: 18px 20px 18px 20px; /* Adjusted margins */
+        font-size: 12px; /* Smaller font size for options */
+        flex-direction: column; /* Stack elements vertically to prevent overflow */
+        gap: 8px; /* Space between stacked elements */
     }
     
-    .register-link p {
-        font-size: 14px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
+    .remember-forgot a {
+        font-size: 12px; /* Smaller font size for link */
+        text-align: left; /* Align link to the left when stacked */
     }
-    
-    /* Adjust decorative elements */
-    .container::before,
-    .container::after {
-        height: 150px;
-        width: 150px; 
-    }
-    
-    .container::before {
-        transform: translate(-200px, -80px);
-    }
-    
-    .container::after {
-        transform: translate(200px, 100px);
-    }
-    
-    /* Adjust or hide some balls for cleaner mobile view */
-    .container .ball-1 {
-        transform: translate(-220px, 130px);
-        height: 70px;
-        width: 70px;
-    }
-    
-    .container .ball-6 {
-        transform: translate(220px, -130px);
-        height: 60px;
-        width: 60px;
-    }
-}
 
-/* Mobile phones (portrait) */
-@media screen and (max-width: 400px) {
-    .container form {
-        width: 92%;
-        max-width: 300px;
-        height: 420px;
-        border-radius: 10px 35px;
-    }
-    
-    h1 {
-        font-size: 28px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    
-    .input-box input {
-        font-size: 14px;
-        margin: 18px;
-    }
-    
-    .input-box i {
-        right: 25px;
-        font-size: 16px;
-        transform: translateY(20px);
-    }
-    
-    .remember-forgot {
-        margin: 15px 18px 15px 18px;
-        font-size: 13px;
-        flex-direction: column;
-        gap: 10px;
-    }
-    
     button {
-        width: 120px;
-        margin: 15px auto 15px auto;
-        font-size: 15px;
+        width: 110px; /* Smaller button */
+        margin: 20px auto 15px auto; /* Adjusted margin */
+        font-size: 14px; /* Smaller text */
+        padding: 3px 5px; /* Smaller padding */
     }
-    
+
     .register-link p {
-        font-size: 13px;
-        margin-left: 18px;
-        margin-right: 18px;
-        margin-bottom: 18px;
+        font-size: 12px; /* Smaller font size */
+        margin: 15px 20px 20px 20px; /* Adjusted margins */
+        white-space: normal; /* Allow text to wrap */
+        overflow: visible; /* Ensure all text is visible if it wraps */
+        text-overflow: clip; /* Prevent ellipsis if text wraps */
+        line-height: 1.4; /* Improve readability of wrapped text */
+    }
+
+    .register-link a {
+        font-size: 12px; /* Smaller font size */
     }
     
-    /* Further adjust decorative elements */
+    /* Adjust decorative elements for smaller screens */
     .container::before,
     .container::after {
         height: 120px;
-        width: 120px;
+        width: 120px; 
     }
     
     .container::before {
-        transform: translate(-150px, -70px);
+        transform: translate(-180px, -70px);
     }
     
     .container::after {
-        transform: translate(150px, 80px);
+        transform: translate(180px, 90px);
     }
     
-    /* Simplify background by hiding some decorative elements */
+    /* Hide most balls for cleaner mobile view */
+    .container .ball-1,
+    .container .ball-2,
+    .container .ball-3,
+    .container .ball-4,
+    .container .ball-5 {
+        display: none; /* Hide all but ball-6 (if desired, can show 1 or 6) */
+    }
+    
+    .container .ball-6 {
+        transform: translate(180px, -110px); /* Adjust position for single ball */
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Mobile phones (portrait) and very small devices */
+@media screen and (max-width: 400px) {
+    .container form {
+        width: 95%; /* Make it take almost full width */
+        max-width: 280px; /* Max width to prevent stretching on slightly larger small devices */
+        height: 380px; /* Significantly reduced height */
+        border-radius: 8px 30px; /* Smaller border radius */
+    }
+    
+    h1 {
+        font-size: 24px; /* Even smaller font size */
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+    
+    .input-box input {
+        width: calc(100% - 30px); /* Adjusted width for tighter space */
+        margin: 15px 15px; /* Tighter margins */
+        font-size: 12px; /* Smallest input font size */
+    }
+    
+    .input-box i {
+        right: 20px; /* Adjusted icon position */
+        transform: translateY(18px); /* Adjusted alignment */
+        font-size: 14px; /* Smallest icon size */
+    }
+    
+    .remember-forgot {
+        margin: 12px 15px; /* Tighter margins */
+        font-size: 11px; /* Smallest font size for remember me/forgot password */
+        gap: 6px; /* Tighter gap */
+    }
+
+    .remember-forgot a {
+        font-size: 11px; /* Smallest font size */
+    }
+    
+    button {
+        width: 100px; /* Smallest button */
+        margin: 15px auto 10px auto; /* Tighter margins */
+        font-size: 13px; /* Smallest button text */
+        padding: 2px 4px; /* Smallest padding */
+    }
+    
+    .register-link p {
+        font-size: 11px; /* Smallest font size */
+        margin: 10px 15px 15px 15px; /* Tighter margins */
+    }
+
+    .register-link a {
+        font-size: 11px; /* Smallest font size */
+    }
+    
+    /* Minimal decorative elements for very small screens */
+    .container::before,
+    .container::after {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .container::before {
+        transform: translate(-100px, -50px);
+    }
+    
+    .container::after {
+        transform: translate(100px, 60px);
+    }
+    
+    /* Ensure all other balls are hidden if not already */
+    .container .ball-1,
     .container .ball-2,
     .container .ball-3,
     .container .ball-4,
     .container .ball-5 {
         display: none;
     }
-    
-    .container .ball-1 {
-        transform: translate(-160px, 100px);
-        height: 60px;
-        width: 60px;
-    }
-    
-    .container .ball-6 {
-        transform: translate(160px, -100px);
-        height: 50px;
-        width: 50px;
-    }
-}
 
-/* Very small devices */
-@media screen and (max-width: 320px) {
-    .container form {
-        width: 90%;
-        height: 400px;
-        border-radius: 8px 30px;
-    }
-    
-    h1 {
-        font-size: 26px;
-    }
-    
-    .input-box input {
-        width: 78%;
-        margin: 15px;
-    }
-    
-    .input-box i {
-        right: 22px;
-        transform: translateY(17px);
-    }
-    
-    /* Further simplify background by reducing size of remaining elements */
-    .container::before,
-    .container::after {
-        height: 100px;
-        width: 100px;
-    }
-    
-    .container::before {
-        transform: translate(-120px, -60px);
-    }
-    
-    .container::after {
-        transform: translate(120px, 70px);
+    .container .ball-6 {
+        display: none; /* Hide even this ball for extremely small screens */
     }
 }
