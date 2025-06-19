@@ -431,52 +431,52 @@ button:hover {
 /* Mobile phones (landscape) and smaller tablets */
 @media screen and (max-width: 576px) {
     h1 {
-        font-size: 28px; /* Reduced for smaller screens */
-        margin-top: 20px; /* Adjusted margin */
-        margin-bottom: 10px; /* Adjusted margin */
+        font-size: 28px; 
+        margin-top: 20px; 
+        margin-bottom: 10px; 
     }
     
     .container form {
-        width: 90%; /* Use percentage for better flexibility */
+        width: 90%; 
         max-width: 320px; /* Set a max-width to prevent it from getting too wide on slightly larger small screens */
-        height: 420px; /* Reduced height */
-        border-radius: 10px 35px; /* Slightly smaller border radius */
+        height: 420px; 
+        border-radius: 10px 35px; 
     }
     
     .input-box input {
-        width: calc(100% - 40px); /* Calculate width dynamically, accounting for margins */
-        margin: 18px 20px; /* Adjusted margins for smaller screens */
-        font-size: 13px; /* Smaller font size */
+        width: calc(100% - 40px); 
+        margin: 19px 20px; 
+        font-size: 13px; 
     }
     
     .input-box i {
         right: 25px; /* Adjusted position */
         transform: translateY(20px); /* Adjusted alignment */
-        font-size: 15px; /* Smaller icon size */
+        font-size: 15px; 
     }
     
     .remember-forgot {
-        margin: 18px 20px 18px 20px; /* Adjusted margins */
-        font-size: 12px; /* Smaller font size for options */
+        margin: 19px 20px 19px 20px; 
+        font-size: 13px; 
         flex-direction: column; /* Stack elements vertically to prevent overflow */
-        gap: 8px; /* Space between stacked elements */
+        gap: 10px; /* Space between stacked elements */
+        text-align: center; 
     }
     
     .remember-forgot a {
-        font-size: 12px; /* Smaller font size for link */
-        text-align: left; /* Align link to the left when stacked */
+        font-size: 13px;         
     }
 
     button {
-        width: 110px; /* Smaller button */
-        margin: 20px auto 15px auto; /* Adjusted margin */
-        font-size: 14px; /* Smaller text */
-        padding: 3px 5px; /* Smaller padding */
+        width: 110px; 
+        margin: 15px auto 20px auto; 
+        font-size: 13px; 
+        padding: 3px 5px; 
     }
 
     .register-link p {
-        font-size: 12px; /* Smaller font size */
-        margin: 15px 20px 20px 20px; /* Adjusted margins */
+        font-size: 12px; 
+        margin: 15px 20px 20px 20px; 
         white-space: normal; /* Allow text to wrap */
         overflow: visible; /* Ensure all text is visible if it wraps */
         text-overflow: clip; /* Prevent ellipsis if text wraps */
@@ -484,37 +484,52 @@ button:hover {
     }
 
     .register-link a {
-        font-size: 12px; /* Smaller font size */
+        font-size: 12px; 
     }
     
-    /* Adjust decorative elements for smaller screens */
-    .container::before,
-    .container::after {
-        height: 120px;
-        width: 120px; 
+    .container::before, .container::after {
+        height: 130px;
+        width: 130px; 
     }
     
     .container::before {
-        transform: translate(-180px, -70px);
+        transform: translate(-150px, -200px);
     }
     
     .container::after {
-        transform: translate(180px, 90px);
+        transform: translate(150px, 200px);
     }
     
-    /* Hide most balls for cleaner mobile view */
-    .container .ball-1,
+    /* Hide balls for cleaner mobile view */        
     .container .ball-2,
     .container .ball-3,
     .container .ball-4,
     .container .ball-5 {
-        display: none; /* Hide all but ball-6 (if desired, can show 1 or 6) */
+        display: none; 
+    }
+
+    .container .ball-1 {
+        transform: translate(-224px, 260px);
+        height: 90px;
+        width: 90px;
+    }
+
+     /* .container .ball-2 {
+        transform: translate(215px, -15px);
+        height: 85px;
+        width: 85px;
     }
     
+    .container .ball-3 {
+        transform: translate(-215px, 15px);
+        height: 85px;
+        width: 85px;
+    } */
+    
     .container .ball-6 {
-        transform: translate(180px, -110px); /* Adjust position for single ball */
-        height: 50px;
-        width: 50px;
+        transform: translate(230px, -270px); /* Adjust position for single ball */
+        height: 70px;
+        width: 70px;
     }
 }
 
