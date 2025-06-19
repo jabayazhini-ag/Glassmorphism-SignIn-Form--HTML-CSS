@@ -260,7 +260,7 @@ button:hover {
 /* Medium-sized screens (small desktops, laptops) */
 @media screen and (max-width: 1024px) {
     .container::before {
-        transform: translate(-380px, -120px);
+        transform: translate(-380px, -145px);
         height: 250px;
         width: 250px;
     }
@@ -314,6 +314,22 @@ button:hover {
     
     h1 {
         font-size: 32px;
+    }
+
+    button {
+        width: 130px; 
+        font-size: 15px; 
+        margin: 22px auto; 
+    }
+
+    .register-link p {
+        font-size: 15px; 
+        margin: 6px; 
+        text-align: center;
+    }
+
+    .register-link a {
+        font-size: 16px; 
     }
 }
 
