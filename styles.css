@@ -318,7 +318,7 @@ button:hover {
 
     button {
         width: 130px; 
-        font-size: 15px; 
+        font-size: 16px; 
         margin: 22px auto; 
     }
 
@@ -341,15 +341,15 @@ button:hover {
     }
     
     .container::before {
-        transform: translate(-300px, -100px);
-        height: 200px;
-        width: 200px;
+        transform: translate(-285px, -220px);
+        height: 170px;
+        width: 170px;
     }
     
     .container::after {
-        transform: translate(300px, 120px);
-        height: 200px;
-        width: 200px;
+        transform: translate(285px, 220px);
+        height: 170px;
+        width: 170px;
     }
     
     .container .ball-1 {
@@ -359,25 +359,25 @@ button:hover {
     }
     
     .container .ball-2 {
-        transform: translate(220px, -200px);
+        transform: translate(185px, -235px);
         height: 120px;
         width: 120px;
     }
     
     .container .ball-3 {
-        transform: translate(-220px, 200px);
+        transform: translate(-165px, 245px);
         height: 120px;
         width: 120px;
     }
     
     .container .ball-4 {
-        transform: translate(140px, 180px);
+        transform: translate(115px, 175px);
         height: 100px;
         width: 100px;
     }
     
     .container .ball-5 {
-        transform: translate(-140px, -180px);
+        transform: translate(-115px, -177px);
         height: 100px;
         width: 100px;
     }
@@ -389,42 +389,42 @@ button:hover {
     }
 
     h1 {
-        font-size: 30px; /* Further reduced */
+        font-size: 30px; 
     }
 
     .input-box input {
-        font-size: 14px; /* Further reduced */
-        margin: 22px; /* Adjusted margin */
+        font-size: 14px; 
+        margin: 23px; 
     }
 
     .input-box i {
-        font-size: 16px; /* Further reduced */
+        font-size: 16px; 
         transform: translateY(25px); /* Adjusted alignment */
         right: 30px; /* Adjusted position */
     }
 
     .remember-forgot {
-        margin: 25px 22px; /* Adjusted margin */
-        font-size: 14px; /* Consistent font size */
+        margin: 26px 22px; 
+        font-size: 14px; 
     }
     
     .remember-forgot a {
-        font-size: 14px; /* Consistent font size */
+        font-size: 14px; 
     }
 
     button {
-        width: 130px; /* Slightly smaller button */
-        font-size: 15px; /* Slightly smaller text */
-        margin: 25px auto; /* Adjusted margin */
+        width: 130px; 
+        font-size: 14px; 
+        margin: 25px auto; 
     }
 
     .register-link p {
-        font-size: 14px; /* Consistent font size */
-        margin: 22px; /* Adjusted margin */
+        font-size: 14px; 
+        margin: 22px; 
     }
 
     .register-link a {
-        font-size: 14px; /* Consistent font size */
+        font-size: 14px; 
     }
 }
 
