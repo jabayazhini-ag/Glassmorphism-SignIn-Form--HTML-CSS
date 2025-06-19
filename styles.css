@@ -514,18 +514,6 @@ button:hover {
         width: 90px;
     }
 
-     /* .container .ball-2 {
-        transform: translate(215px, -15px);
-        height: 85px;
-        width: 85px;
-    }
-    
-    .container .ball-3 {
-        transform: translate(-215px, 15px);
-        height: 85px;
-        width: 85px;
-    } */
-    
     .container .ball-6 {
         transform: translate(230px, -270px); /* Adjust position for single ball */
         height: 70px;
@@ -537,53 +525,53 @@ button:hover {
 @media screen and (max-width: 400px) {
     .container form {
         width: 95%; /* Make it take almost full width */
-        max-width: 280px; /* Max width to prevent stretching on slightly larger small devices */
-        height: 380px; /* Significantly reduced height */
-        border-radius: 8px 30px; /* Smaller border radius */
+        max-width: 280px; 
+        height: 380px; 
+        border-radius: 8px 30px; 
     }
     
     h1 {
-        font-size: 24px; /* Even smaller font size */
-        margin-top: 15px;
-        margin-bottom: 8px;
+        font-size: 24px; 
+        margin-top: 25px;
+        margin-bottom: 10px;
     }
     
     .input-box input {
         width: calc(100% - 30px); /* Adjusted width for tighter space */
-        margin: 15px 15px; /* Tighter margins */
-        font-size: 12px; /* Smallest input font size */
+        margin: 17px 15px; /* Tighter margins */
+        font-size: 13px; 
     }
     
     .input-box i {
-        right: 20px; /* Adjusted icon position */
-        transform: translateY(18px); /* Adjusted alignment */
-        font-size: 14px; /* Smallest icon size */
+        right: 20px; 
+        transform: translateY(18px); 
+        font-size: 14px; 
     }
     
     .remember-forgot {
-        margin: 12px 15px; /* Tighter margins */
-        font-size: 11px; /* Smallest font size for remember me/forgot password */
-        gap: 6px; /* Tighter gap */
+        margin: 18px 15px; 
+        font-size: 12.5px;
+        gap: 7px; /* Tighter gap */
     }
 
     .remember-forgot a {
-        font-size: 11px; /* Smallest font size */
+        font-size: 12.5px; 
     }
     
     button {
-        width: 100px; /* Smallest button */
-        margin: 15px auto 10px auto; /* Tighter margins */
-        font-size: 13px; /* Smallest button text */
-        padding: 2px 4px; /* Smallest padding */
+        width: 100px; 
+        margin: 16px auto; 
+        font-size: 13px; 
+        padding: 2px 4px; 
     }
     
     .register-link p {
-        font-size: 11px; /* Smallest font size */
-        margin: 10px 15px 15px 15px; /* Tighter margins */
+        font-size: 11px; 
+        margin: 13px; 
     }
 
     .register-link a {
-        font-size: 11px; /* Smallest font size */
+        font-size: 11px; 
     }
     
     /* Minimal decorative elements for very small screens */
@@ -594,23 +582,19 @@ button:hover {
     }
     
     .container::before {
-        transform: translate(-100px, -50px);
+        transform: translate(-130px, -180px);
     }
     
     .container::after {
-        transform: translate(100px, 60px);
+        transform: translate(135px, 185px);
     }
     
-    /* Ensure all other balls are hidden if not already */
     .container .ball-1,
     .container .ball-2,
     .container .ball-3,
     .container .ball-4,
-    .container .ball-5 {
-        display: none;
-    }
-
+    .container .ball-5,
     .container .ball-6 {
-        display: none; /* Hide even this ball for extremely small screens */
-    }
+        display: none;
+    }    
 }
