@@ -598,14 +598,14 @@ button:hover {
 
     .container .ball-2 {
         display: block; 
-        transform: translate(125px, -260px);
+        transform: translate(140px, -263px);
         height: 105px;
         width: 105px;
     }
     
     .container .ball-3 {
         display: block; 
-        transform: translate(-125px, 260px);
+        transform: translate(-140px, 263px);
         height: 105px;
         width: 105px;
     }     
