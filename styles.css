@@ -588,13 +588,25 @@ button:hover {
     .container::after {
         transform: translate(135px, 185px);
     }
-    
-    .container .ball-1,
-    .container .ball-2,
-    .container .ball-3,
+
+    .container .ball-1,   
     .container .ball-4,
     .container .ball-5,
     .container .ball-6 {
         display: none;
-    }    
+    }   
+
+    .container .ball-2 {
+        display: block; 
+        transform: translate(125px, -260px);
+        height: 105px;
+        width: 105px;
+    }
+    
+    .container .ball-3 {
+        display: block; 
+        transform: translate(-125px, 260px);
+        height: 105px;
+        width: 105px;
+    }     
 }
